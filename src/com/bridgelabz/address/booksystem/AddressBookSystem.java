@@ -28,7 +28,7 @@ class Contact
         this.city = city;
         this.state = state;
         this.zip = zip;
-        this.phoneNumber = mobileNumber;
+        this.phoneNumber = phoneNumber;
         this.email  = email;
     }
     public void contacts()
