@@ -50,13 +50,13 @@ class Contact {
     }
     public void viewData ()
     {
-        System.out.println("First Name:-" + firstName);
-        System.out.println("Last Name:-" + lastName);
-        System.out.println("Address:-" + address);
-        System.out.println("City:-" + city);
-        System.out.println("State:-" + state);
-        System.out.println("Zip Code:-" + zip);
-        System.out.println("Mobile Number:-" + phoneNumber);
-        System.out.println("Email Id:-" + email);
+        System.out.print("First Name:-" + firstName);
+        System.out.print(" Last Name:-" + lastName);
+        System.out.print(" Address:-" + address);
+        System.out.print(" City:-" + city);
+        System.out.print(" State:-" + state);
+        System.out.print(" Zip Code:-" + zip);
+        System.out.print(" Mobile Number:-" + phoneNumber);
+        System.out.println(" Email Id:-" + email);
     }
 }
