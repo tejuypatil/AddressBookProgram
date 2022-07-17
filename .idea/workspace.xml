@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6ca90638-724a-441d-95b6-af24e091d9ab" name="Changes" comment="Added new contacts in Address book System">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBookSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBookSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,5 +105,16 @@
     <MESSAGE value="Created a contacts in Address book System" />
     <MESSAGE value="Added new contacts in Address book System" />
     <option name="LAST_COMMIT_MESSAGE" value="Added new contacts in Address book System" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
