@@ -33,6 +33,8 @@ public class AddressBookSystem {
         addressBook2.add(contact1);
         addressBook2.add(contact2);
         addressBook2.print();
+
+        addressBook1.editContact("Babu");
     }
 
 }

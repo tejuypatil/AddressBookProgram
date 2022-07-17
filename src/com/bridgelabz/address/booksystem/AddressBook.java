@@ -16,4 +16,9 @@ public class AddressBook {
             contacts[i].viewData();
         }
     }
+
+    public void editContact(String contactName)
+    {
+
+    }
 }
