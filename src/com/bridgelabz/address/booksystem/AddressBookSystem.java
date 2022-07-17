@@ -29,24 +29,8 @@ class Contact {
         this.city = city;
         this.state = state;
         this.zip = zip;
-<<<<<<< HEAD
-        this.phoneNumber = phoneNumber;
-        this.email  = email;
-    }
-    public void contacts()
-    {
-        System.out.println("First Name:-"+firstName);
-        System.out.println("Last Name:-"+lastName);
-        System.out.println("Address:-"+address);
-        System.out.println("City:-"+city);
-        System.out.println("State:-"+state);
-        System.out.println("Zip Code:-"+zip);
-        System.out.println("Mobile Number:-"+phoneNumber);
-        System.out.println("Email Id:-"+email);
-=======
         this.phoneNumber = mobileNumber;
         this.email = email;
->>>>>>> UC2
     }
 
     public String newContact() {
@@ -83,5 +67,4 @@ class Contact {
             System.out.println("Email Id:-" + email);
         }
 }
-
 
