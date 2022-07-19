@@ -33,4 +33,27 @@ public class AddressBook {
         }
 
     }
+
+    public void deleteContact(String name)
+    {
+        int indexToDelete=-1;
+        for (int i=0;i<index;i++)
+        {
+            Contact c=contacts[i];
+            if ( c.firstName.equals(name)  )
+            {
+                indexToDelete=i;
+                break;
+            }
+        }
+
+        if(indexToDelete > -1)
+        {
+            //delete logic
+            for (int i = indexToDelete; i < index ; i++) {
+                contacts[i]=contacts[i+1];
+            }
+            index--;
+        }
+    }
 }
