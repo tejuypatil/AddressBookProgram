@@ -12,7 +12,6 @@ class Contact {
     String phoneNumber;
     String email;
     Scanner scanner = new Scanner(System.in);
-
     Contact()
     {
 
