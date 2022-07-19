@@ -10,7 +10,7 @@ public class AddressBookSystem {
         contact1.viewData();
 
         Contact contact2= new Contact();
-        contact2.askDetailsToUser();
+        //contact2.askDetailsToUser();
         contact2.viewData();
 
 
@@ -34,7 +34,14 @@ public class AddressBookSystem {
         addressBook2.add(contact2);
         addressBook2.print();
 
-        addressBook1.editContact("Babu");
+        String name;
+        Scanner scanner=new Scanner(System.in);
+        System.out.println("Enter First Name of contact to edit from addressbook1");
+        name =scanner.next();
+        addressBook1.editContact(name);
+
+        addressBook1.print();
+
     }
 
 }

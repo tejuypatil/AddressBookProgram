@@ -1,5 +1,7 @@
 package com.bridgelabz.address.booksystem;
 
+import java.util.Scanner;
+
 public class AddressBook {
 
     Contact[] contacts=new Contact[100];
@@ -19,6 +21,16 @@ public class AddressBook {
 
     public void editContact(String contactName)
     {
+        for (int i=0;i<index;i++)
+        {
+            Contact c=contacts[i];
+            if ( c.firstName.equals(contactName)  )
+            {
+                // c is contact to edit
+                c.viewData();
+                c.askDetailsToUser();
+            }
+        }
 
     }
 }

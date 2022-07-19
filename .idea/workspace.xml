@@ -5,6 +5,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBookSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBookSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +111,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
