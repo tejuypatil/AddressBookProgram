@@ -17,11 +17,11 @@ public class AddressBookSystem {
 
         AddressBook addressBook1=new AddressBook();
 
-        addressBook1.add(contact1);
-        addressBook1.add(contact2);
-        addressBook1.add(contact3);
-        addressBook1.add(contact4);
-        addressBook1.add(contact5);
+        addressBook1.addContact(contact1);
+        addressBook1.addContact(contact2);
+        addressBook1.addContact(contact3);
+        addressBook1.addContact(contact4);
+        addressBook1.addContact(contact5);
 
         while(true)
         {
@@ -29,6 +29,7 @@ public class AddressBookSystem {
             System.out.println("| 1. print AddressBook                      |");
             System.out.println("| 2. Edit Contact                           |");
             System.out.println("| 3. Delete Contact                         |");
+            System.out.println("| 4. Add Contact                            |");
             System.out.println("--------------------------------------------");
 
 
@@ -48,6 +49,11 @@ public class AddressBookSystem {
                     System.out.println("Enter first-name to delete contact: ");
                     String nameToDelete = scanner.next();
                     addressBook1.deleteContact(nameToDelete);
+                    break;
+                case 4:
+                    Contact contactToAdd=new Contact();
+                    contactToAdd.askDetailsToUser();
+                    addressBook1.addContact(contactToAdd);
                     break;
             }
         }
