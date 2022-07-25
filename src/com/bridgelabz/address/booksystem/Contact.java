@@ -16,7 +16,7 @@ class Contact {
     {
 
     }
-    Contact(String firstName, String lastName, String address, String city, String state, String zip, String mobileNumber, String email) {
+  /*  Contact(String firstName, String lastName, String address, String city, String state, String zip, String mobileNumber, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.address = address;
@@ -25,7 +25,7 @@ class Contact {
         this.zip = zip;
         this.phoneNumber = mobileNumber;
         this.email = email;
-    }
+    }*/
 
     public String askDetailsToUser() {
         System.out.println("Enter First Name:-");

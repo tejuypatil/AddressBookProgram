@@ -1,5 +1,7 @@
 package com.bridgelabz.address.booksystem;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class AddressBookSystem {
@@ -11,15 +13,22 @@ public class AddressBookSystem {
 
         
         AddressBook addressBook1=new AddressBook();
+        String nameOfAddressBook = "default";
+
+        Map<String,AddressBook> addressBookMap = new HashMap<String,AddressBook>();
+        addressBookMap.put(nameOfAddressBook,addressBook1);
 
         
         while(true)
         {
-            System.out.println("---Menu-------------------------------------");
+            System.out.println("---Menu("+nameOfAddressBook+")---------------");
             System.out.println("| 1. print AddressBook                      |");
             System.out.println("| 2. Edit Contact                           |");
             System.out.println("| 3. Delete Contact                         |");
             System.out.println("| 4. Add Contact                            |");
+            System.out.println("| 5. Add Address Book                       |");
+            System.out.println("| 6. Select Address Book                    |");
+
             System.out.println("--------------------------------------------");
 
 
@@ -43,7 +52,21 @@ public class AddressBookSystem {
                 case 4:
                     addressBook1.addContact();
                     break;
+                case 5:
+                    AddressBook addressBook =new AddressBook();
+                    String addressBookName=scanner.next();
+                    addressBookMap.put(addressBookName,addressBook);
+                    break;
+                case 6:
+                    for (Map.Entry<String,AddressBook> entry : addressBookMap.entrySet()) {
+                        System.out.println(entry.getKey());
+
+                    }
+                    nameOfAddressBook= scanner.next();
+                    addressBook1=addressBookMap.get(nameOfAddressBook);
+                    break;
             }
+
         }
 
     }
