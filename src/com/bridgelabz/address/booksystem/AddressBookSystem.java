@@ -9,20 +9,10 @@ public class AddressBookSystem {
         System.out.println("         Welcome to Address Book Program");
         System.out.println("----------------------------------------------------");
 
-        Contact contact1 = new Contact("Tejaswini","Patil","Chandgad","Kolhpur","Maharashtra","416509","9422630373","tejuypatil@gmail.com" );
-        Contact contact2 = new Contact("Meghna","Patil","Chandgad","Kolhpur","Maharashtra","416509","9422630373","megnapatil@gmail.com" );
-        Contact contact3 = new Contact("Babu","Patel","Forpur","Kolhpur","Maharashtra","416509","9422630373","e1@gmail.com" );
-        Contact contact4 = new Contact("Sonu","Desai","Gagapur","Kolhpur","Maharashtra","416509","9422630373","e2@gmail.com" );
-        Contact contact5 = new Contact("Sarica","More","Norttulo","Kolhpur","Maharashtra","416509","9422630373","e3@gmail.com" );
-
+        
         AddressBook addressBook1=new AddressBook();
 
-        addressBook1.addContact(contact1);
-        addressBook1.addContact(contact2);
-        addressBook1.addContact(contact3);
-        addressBook1.addContact(contact4);
-        addressBook1.addContact(contact5);
-
+        
         while(true)
         {
             System.out.println("---Menu-------------------------------------");
@@ -51,9 +41,7 @@ public class AddressBookSystem {
                     addressBook1.deleteContact(nameToDelete);
                     break;
                 case 4:
-                    Contact contactToAdd=new Contact();
-                    contactToAdd.askDetailsToUser();
-                    addressBook1.addContact(contactToAdd);
+                    addressBook1.addContact();
                     break;
             }
         }
