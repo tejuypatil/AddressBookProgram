@@ -15,11 +15,15 @@ public class AddressBook {
        // Scanner scanner = new Scanner(System.in);
         Contact contact = new Contact();
         contact.askDetailsToUser();
-        contacts.add(contact);
-
-             // contactMap.put(contact.firstName,contact);
-
-
+        if(!contacts.contains(contact))
+        {
+            contacts.add(contact);
+        }
+        else
+        {
+            System.out.println("Duplicate entry");
+        }
+        // contactMap.put(contact.firstName,contact);
     }
 
     public void print()

@@ -2,7 +2,7 @@ package com.bridgelabz.address.booksystem;
 
 import java.util.Scanner;
 
-class Contact {
+class Contact{
     String firstName;
     String lastName;
     String address;
@@ -57,5 +57,13 @@ class Contact {
         System.out.print(" Zip Code:-" + zip);
         System.out.print(" Mobile Number:-" + phoneNumber);
         System.out.println(" Email Id:-" + email);
+    }
+
+    public boolean equals(Object c) {
+        if (this.firstName.equals(((Contact) c).firstName)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }

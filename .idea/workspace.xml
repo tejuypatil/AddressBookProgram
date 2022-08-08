@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ca90638-724a-441d-95b6-af24e091d9ab" name="Changes" comment="Added program for adding multiple address book" />
+    <list default="true" id="6ca90638-724a-441d-95b6-af24e091d9ab" name="Changes" comment="Added program for adding multiple address book">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658753784184</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added program for adding multiple address book">
+      <created>1658754109476</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1658754109476</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -139,5 +150,21 @@
     <MESSAGE value="Added  new contact by using UC5" />
     <MESSAGE value="Added program for adding multiple address book" />
     <option name="LAST_COMMIT_MESSAGE" value="Added program for adding multiple address book" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
