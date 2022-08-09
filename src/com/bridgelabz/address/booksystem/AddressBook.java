@@ -15,7 +15,7 @@ public class AddressBook {
        // Scanner scanner = new Scanner(System.in);
         Contact contact = new Contact();
         contact.askDetailsToUser();
-        if(!contacts.contains(contact))
+        if(!contacts.stream().anyMatch(contact1 ->contact1.equals(contact)))
         {
             contacts.add(contact);
         }
