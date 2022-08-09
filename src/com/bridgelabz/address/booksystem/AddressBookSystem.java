@@ -1,5 +1,7 @@
 package com.bridgelabz.address.booksystem;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class AddressBookSystem {
@@ -9,27 +11,24 @@ public class AddressBookSystem {
         System.out.println("         Welcome to Address Book Program");
         System.out.println("----------------------------------------------------");
 
-        Contact contact1 = new Contact("Tejaswini","Patil","Chandgad","Kolhpur","Maharashtra","416509","9422630373","tejuypatil@gmail.com" );
-        Contact contact2 = new Contact("Meghna","Patil","Chandgad","Kolhpur","Maharashtra","416509","9422630373","megnapatil@gmail.com" );
-        Contact contact3 = new Contact("Babu","Patel","Forpur","Kolhpur","Maharashtra","416509","9422630373","e1@gmail.com" );
-        Contact contact4 = new Contact("Sonu","Desai","Gagapur","Kolhpur","Maharashtra","416509","9422630373","e2@gmail.com" );
-        Contact contact5 = new Contact("Sarica","More","Norttulo","Kolhpur","Maharashtra","416509","9422630373","e3@gmail.com" );
-
+        
         AddressBook addressBook1=new AddressBook();
+        String nameOfAddressBook = "default";
 
-        addressBook1.addContact(contact1);
-        addressBook1.addContact(contact2);
-        addressBook1.addContact(contact3);
-        addressBook1.addContact(contact4);
-        addressBook1.addContact(contact5);
+        Map<String,AddressBook> addressBookMap = new HashMap<String,AddressBook>();
+        addressBookMap.put(nameOfAddressBook,addressBook1);
 
+        
         while(true)
         {
-            System.out.println("---Menu-------------------------------------");
+            System.out.println("---Menu("+nameOfAddressBook+")---------------");
             System.out.println("| 1. print AddressBook                      |");
             System.out.println("| 2. Edit Contact                           |");
             System.out.println("| 3. Delete Contact                         |");
             System.out.println("| 4. Add Contact                            |");
+            System.out.println("| 5. Add Address Book                       |");
+            System.out.println("| 6. Select Address Book                    |");
+
             System.out.println("--------------------------------------------");
 
 
@@ -51,11 +50,23 @@ public class AddressBookSystem {
                     addressBook1.deleteContact(nameToDelete);
                     break;
                 case 4:
-                    Contact contactToAdd=new Contact();
-                    contactToAdd.askDetailsToUser();
-                    addressBook1.addContact(contactToAdd);
+                    addressBook1.addContact();
+                    break;
+                case 5:
+                    AddressBook addressBook =new AddressBook();
+                    String addressBookName=scanner.next();
+                    addressBookMap.put(addressBookName,addressBook);
+                    break;
+                case 6:
+                    for (Map.Entry<String,AddressBook> entry : addressBookMap.entrySet()) {
+                        System.out.println(entry.getKey());
+
+                    }
+                    nameOfAddressBook= scanner.next();
+                    addressBook1=addressBookMap.get(nameOfAddressBook);
                     break;
             }
+
         }
 
     }
