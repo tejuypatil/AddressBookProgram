@@ -28,6 +28,7 @@ public class AddressBookSystem {
             System.out.println("| 4. Add Contact                            |");
             System.out.println("| 5. Add Address Book                       |");
             System.out.println("| 6. Select Address Book                    |");
+            System.out.println("| 7. Search contact                         |");
 
             System.out.println("--------------------------------------------");
 
@@ -64,6 +65,9 @@ public class AddressBookSystem {
                     }
                     nameOfAddressBook= scanner.next();
                     addressBook1=addressBookMap.get(nameOfAddressBook);
+                    break;
+                case 7:
+                    addressBook1.searchContact();
                     break;
             }
 
