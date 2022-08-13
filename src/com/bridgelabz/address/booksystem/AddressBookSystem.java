@@ -28,7 +28,7 @@ public class AddressBookSystem {
             System.out.println("| 4. Add Contact                            |");
             System.out.println("| 5. Add Address Book                       |");
             System.out.println("| 6. Select Address Book                    |");
-            System.out.println("| 7. Search contact                         |");
+            System.out.println("| 7. search contact                         |");
 
             System.out.println("--------------------------------------------");
 

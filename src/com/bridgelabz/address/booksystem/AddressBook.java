@@ -9,7 +9,11 @@ public class AddressBook {
     Map<String,Contact> contactMap=new HashMap<>();
 
     ArrayList<Contact> contacts = new ArrayList<Contact>();
-
+    static HashMap<String,Contact> cityContactList= new HashMap<>();
+    static HashMap<String,Contact> stateContactList= new HashMap<>();
+    private HashMap<String,ArrayList> addressBookList= new HashMap<>();
+    static ArrayList<Contact> currentAddressBook;
+    private String currentAddressBookName;
 
     public void addContact()
     {
@@ -52,6 +56,61 @@ public class AddressBook {
             if (contact.firstName.equals(name)) {
                 contacts.remove(contact);
             }
+        }
+    }
+    void selectAddressBook() {
+        System.out.println(addressBookList.keySet());
+        System.out.println("enter name of address book");
+        String addressBookName = scanner.next();
+
+        for (String key : addressBookList.keySet()) {
+            if (key.equalsIgnoreCase(addressBookName)) {
+                currentAddressBook = addressBookList.get(key);
+                currentAddressBookName = key;
+            }
+        }
+        System.out.println("current AddressBook is " + currentAddressBookName);
+
+    }
+void  viewContacts() {
+        System.out.println("""
+           Enter Option
+                1.To view By City
+                2.To view By State
+                3.Exit
+                """);
+    switch (scanner.nextInt()){
+        case 1:
+            viewContactsByCity();
+            break;
+        case 2:
+            viewContactByState();
+            break;
+        default:
+            viewContacts();
+
+    }
+}
+
+    private void viewContactsByCity() {
+        System.out.println("Enter City: ");
+        String city = scanner.next();
+        for (String key: cityContactList.keySet()) {
+            if (key.equalsIgnoreCase(city)){
+                System.out.println(cityContactList.get(city));
+            }
+            
+        }
+    }
+
+    private void viewContactByState() {
+        System.out.println("Enter State: ");
+        String state = scanner.next();
+        for (String key:stateContactList.keySet()) {
+            if (key.equalsIgnoreCase(state)){
+                System.out.println(stateContactList.get(state));
+            }
+
         }
     }
 
