@@ -58,61 +58,7 @@ public class AddressBook {
             }
         }
     }
-    void selectAddressBook() {
-        System.out.println(addressBookList.keySet());
-        System.out.println("enter name of address book");
-        String addressBookName = scanner.next();
 
-        for (String key : addressBookList.keySet()) {
-            if (key.equalsIgnoreCase(addressBookName)) {
-                currentAddressBook = addressBookList.get(key);
-                currentAddressBookName = key;
-            }
-        }
-        System.out.println("current AddressBook is " + currentAddressBookName);
-
-    }
-void  viewContacts() {
-        System.out.println("""
-           Enter Option
-                1.To view By City
-                2.To view By State
-                3.Exit
-                """);
-    switch (scanner.nextInt()){
-        case 1:
-            viewContactsByCity();
-            break;
-        case 2:
-            viewContactByState();
-            break;
-        default:
-            viewContacts();
-
-    }
-}
-
-    private void viewContactsByCity() {
-        System.out.println("Enter City: ");
-        String city = scanner.next();
-        for (String key: cityContactList.keySet()) {
-            if (key.equalsIgnoreCase(city)){
-                System.out.println(cityContactList.get(city));
-            }
-            
-        }
-    }
-
-    private void viewContactByState() {
-        System.out.println("Enter State: ");
-        String state = scanner.next();
-        for (String key:stateContactList.keySet()) {
-            if (key.equalsIgnoreCase(state)){
-                System.out.println(stateContactList.get(state));
-            }
-
-        }
-    }
 
     void searchContact(){
         System.out.println(" 1.Search by City\n 2.Search by State");
@@ -155,6 +101,28 @@ void  viewContacts() {
         for (Contact contact:list) {
             contact.viewData();
 
+        }
+
+    }
+    void contactCount(){
+        System.out.println("1.Count of City\n2.Count of State");
+        int option = scanner.nextInt();
+        switch (option){
+            case 1:
+                System.out.println("Enter City: ");
+                String city = scanner.next();
+                int cityCount= contacts.stream().filter(contact -> contact.city.equals(city)).toList().size();
+                System.out.println("Count:- "+cityCount);
+                break;
+            case 2:
+                System.out.println("Enter State: ");
+                String state = scanner.next();
+                int stateCount=contacts.stream().filter(contact -> contact.city.equals(state)).toList().size();
+                System.out.println("Count: "+stateCount);
+                break;
+            default:
+                contactCount();
+                break;
         }
     }
 
