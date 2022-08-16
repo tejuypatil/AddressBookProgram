@@ -30,7 +30,7 @@ public class AddressBookSystem {
             System.out.println("| 6. Select Address Book                    |");
             System.out.println("| 7. Search contact                         |");
             System.out.println("| 8. Show number of contact Count           |");
-            System.out.println("| 9. Sort the entries by person name        |");
+            System.out.println("| 9. Sort the entries                       |");
 
             System.out.println("--------------------------------------------");
 
