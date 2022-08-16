@@ -122,7 +122,27 @@ public class AddressBook {
     }
 
     void sortContact() {
-        List<Contact> contactList1 = contacts.stream().sorted((c1, c2) ->c1.firstName.compareToIgnoreCase(c2.firstName) ).collect(Collectors.toList());
-        contactList1.stream().forEach(contact -> contact.viewData());
+        System.out.println("1.By City\n2.By State\n3.By Zip");
+        int option = scanner.nextInt();
+        switch (option) {
+            case 1:
+                System.out.println("Entries sorted by City: ");
+                List<Contact> contactList1 = contacts.stream().sorted((c1, c2) ->c1.city.compareToIgnoreCase(c2.city) ).collect(Collectors.toList());
+                contactList1.stream().forEach(contact ->contact.viewData());
+                break;
+            case 2:
+                System.out.println("Entries sorted by State: ");
+                List<Contact> contactList2 = contacts.stream().sorted((c1, c2) ->c1.state.compareToIgnoreCase(c2.state) ).collect(Collectors.toList());
+                contactList2.stream().forEach(contact ->contact.viewData());
+                break;
+            case 3:
+                System.out.println(" Entries sorted by Zip: ");
+                List<Contact> contactList3 = contacts.stream().sorted((c1, c2) ->c1.zip.compareToIgnoreCase(c2.zip) ).collect(Collectors.toList());
+                contactList3.stream().forEach(contact ->contact.viewData());
+                break;
+            default:
+                contactCount();
+                break;
+        }
     }
 }
