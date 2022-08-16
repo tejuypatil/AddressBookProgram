@@ -31,7 +31,8 @@ public class AddressBookSystem {
             System.out.println("| 7. Search contact                         |");
             System.out.println("| 8. Show number of contact Count           |");
             System.out.println("| 9. Sort the entries                       |");
-
+            System.out.println("| 10. Save address book to file             |");
+            System.out.println("| 11.Read address book to file              |");
             System.out.println("--------------------------------------------");
 
 
@@ -75,6 +76,12 @@ public class AddressBookSystem {
                     break;
                 case 9:
                     addressBook1.sortContact();
+                    break;
+                case 10:
+                    addressBook1.saveData(nameOfAddressBook);
+                    break;
+                case 11:
+                    addressBook1.loadData(nameOfAddressBook);
                     break;
                 default:
                     break;

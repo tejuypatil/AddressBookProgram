@@ -50,7 +50,7 @@ class Contact{
     public void viewData ()
     {
         System.out.print("First Name:-" + firstName);
-        System.out.print(" Last Name:-" + lastName);
+         System.out.print(" Last Name:-" + lastName);
         System.out.print(" Address:-" + address);
         System.out.print(" City:-" + city);
         System.out.print(" State:-" + state);
