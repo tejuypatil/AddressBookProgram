@@ -28,7 +28,9 @@ public class AddressBookSystem {
             System.out.println("| 4. Add Contact                            |");
             System.out.println("| 5. Add Address Book                       |");
             System.out.println("| 6. Select Address Book                    |");
-            System.out.println("| 7. search contact                         |");
+            System.out.println("| 7. Search contact                         |");
+            System.out.println("| 8. Show number of contact Count           |");
+            System.out.println("| 9. Sort the entries by person name        |");
 
             System.out.println("--------------------------------------------");
 
@@ -61,13 +63,20 @@ public class AddressBookSystem {
                 case 6:
                     for (Map.Entry<String,AddressBook> entry : addressBookMap.entrySet()) {
                         System.out.println(entry.getKey());
-
                     }
                     nameOfAddressBook= scanner.next();
                     addressBook1=addressBookMap.get(nameOfAddressBook);
                     break;
                 case 7:
                     addressBook1.searchContact();
+                    break;
+                case 8:
+                    addressBook1.contactCount();
+                    break;
+                case 9:
+                    addressBook1.sortContact();
+                    break;
+                default:
                     break;
             }
 
