@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ca90638-724a-441d-95b6-af24e091d9ab" name="Changes" comment="Added program for view Person By using City and State">
+    <list default="true" id="6ca90638-724a-441d-95b6-af24e091d9ab" name="Changes" comment="Added program to get number of persons count by City or State">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBook.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBookSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/AddressBookSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/address/booksystem/Contact.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +156,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660367610129</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Added program to get number of persons count by City or State">
+      <created>1660558113393</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660558113393</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -182,6 +188,7 @@
     <MESSAGE value="Added program for Serching Person By using City and State" />
     <MESSAGE value="Added program for Searching Person By using City and State" />
     <MESSAGE value="Added program for view Person By using City and State" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added program for view Person By using City and State" />
+    <MESSAGE value="Added program to get number of persons count by City or State" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added program to get number of persons count by City or State" />
   </component>
 </project>
