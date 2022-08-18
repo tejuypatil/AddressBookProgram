@@ -2,6 +2,7 @@ package com.bridgelabz.address.booksystem;
 
 import com.bridgelabz.address.booksystem.utils.CsvIO;
 import com.bridgelabz.address.booksystem.utils.FileIO;
+import com.bridgelabz.address.booksystem.utils.JsonIO;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -162,6 +163,10 @@ public class AddressBook {
                 CsvIO csvIO = new CsvIO();
                 csvIO.writeData(fileName,contacts);
                 break;
+            case 3:
+                JsonIO jsonIO = new JsonIO();
+                jsonIO.writeData(fileName,contacts);
+                break;
             default:
                 break;
         }
@@ -178,6 +183,9 @@ public class AddressBook {
                 CsvIO csvIO = new CsvIO();
                 csvIO.readData(fileName,contacts);
                 break;
+            case 3:
+                JsonIO jsonIO = new JsonIO();
+                jsonIO.readData(fileName,contacts);
             default:
                 break;
         }
