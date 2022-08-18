@@ -1,10 +1,11 @@
 package com.bridgelabz.address.booksystem;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class AddressBookSystem {
+public class
+
+AddressBookSystem {
 
     public static void main(String[] args) {
         System.out.println("----------------------------------------------------");
@@ -33,6 +34,7 @@ public class AddressBookSystem {
             System.out.println("| 9. Sort the entries                       |");
             System.out.println("| 10. Save address book to file             |");
             System.out.println("| 11.Read address book to file              |");
+
             System.out.println("--------------------------------------------");
 
 
@@ -78,10 +80,10 @@ public class AddressBookSystem {
                     addressBook1.sortContact();
                     break;
                 case 10:
-                    addressBook1.saveData(nameOfAddressBook);
+                    addressBook1.save(nameOfAddressBook);
                     break;
                 case 11:
-                    addressBook1.loadData(nameOfAddressBook);
+                    addressBook1.load(nameOfAddressBook);
                     break;
                 default:
                     break;
