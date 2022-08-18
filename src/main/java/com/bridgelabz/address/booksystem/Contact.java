@@ -2,17 +2,17 @@ package com.bridgelabz.address.booksystem;
 
 import java.util.Scanner;
 
-class Contact{
-    String firstName;
-    String lastName;
+ public class Contact{
+   public String firstName;
+    public String lastName;
     String address;
-    String city;
-    String state;
-    String zip;
-    String phoneNumber;
-    String email;
+    public String city;
+    public String state;
+    public String zip;
+    public String phoneNumber;
+    public String email;
     Scanner scanner = new Scanner(System.in);
-    Contact()
+    public Contact()
     {
 
     }
